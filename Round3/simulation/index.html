@@ -1,0 +1,740 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-4.0.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>BlockChains</title>
+</head>
+
+<body>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="./img/Picture2.png" style="height: 40px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Topics
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Chapter 1</a>
+                        <a class="dropdown-item" href="#">Chapter 2</a>
+                        <a class="dropdown-item" href="#">Chapter 3</a>
+                        <a class="dropdown-item" href="#">Chapter 4</a>
+                        <a class="dropdown-item" href="#">Chapter 5</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+            <!-- <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form> 
+        </div>
+    </nav> -->
+    <!-- Navigation bar code ends -->
+    <div class="container-fluid mt-4 mb-5">
+        <div class="headingz mb-3">
+            <p>Introduction to</p>
+            <h2><span class="left"></span>Blockchains<span class="right"></span></h2>
+            <br>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div id="chap-carasouel" class="carousel slide" data-interval="false" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- ============================================== Ledger Start ===================================================  -->
+                        <div class="carousel-item active">
+                            <div class="scene">
+                                <div class="scene-heading" data-toggle="tooltip" data-placement="right" title="It is an open, distributed ledger that can record transactions between two parties
+                                efficiently and in a verifiable and permanent way. For use as a distributed ledger,
+                                 a blockchain is typically managed by a peer-to-peer network collectively
+                                adhering to a protocol for inter-node communication and validating new blocks.">
+                                    Open Ledger
+                                </div>
+                                <div class="o-led">
+                                    <button class="btn o-btn btnFloat" id="Show">Start</button>
+                                    <button class="btn o-btn" style="display: none;" id="pagain">Restart</button>
+                                    <button class="btn o-btn disabled" id="b1">Create Genesis Block</button>
+                                    <button class="btn o-btn" style="display: none;" id="b2">Create
+                                        Block-2/Link-1</button>
+                                    <button class="btn o-btn" style="display: none;" id="b3">Create
+                                        Block-3/Link-2</button>
+                                    <button class="btn o-btn" style="display: none;" id="b4">Create
+                                        Block-4/Link-3</button>
+                                    <div class="ledger">
+                                        <div id="user-a" class="text-center">A</div>
+                                        <div id="arrow-a"></div>
+                                        <div id="triangle-right"></div>
+                                        <div id="user-b" class="text-center">B</div>
+                                        <div id="arrow-b"></div>
+                                        <div id="triangle-down"></div>
+                                        <div id="user-c" class="text-center">C</div>
+                                        <div id="arrow-c"></div>
+                                        <div id="triangle-left"></div>
+                                        <div id="user-d" class="text-center">D</div>
+                                        <div id="block-1" class="text-center ">A<--$100</div> <i class="fas fa-link "
+                                                id="a-fas"></i>
+                                                <div id="block-2" class="text-center ">A-->B $40</div><i
+                                                    class="fas fa-link " id="b-fas"></i>
+                                                <div id="block-3" class="text-center ">B-->C $30</div><i
+                                                    class="fas fa-link " id="c-fas"></i>
+                                                <div id="block-4" class="text-center ">C-->D $10</div>
+                                        </div>
+                                        <div class="strt-line"></div>
+                                        <div class="step-1 instructions typewriter">
+                                            1. The process starts.
+                                        </div>
+                                        <div class="step-2 instructions typewriter">
+                                            2. $100 are given to the user-a.
+                                        </div>
+                                        <div class="step-3 instructions typewriter">
+                                            3. $50 are given to the user-b by user-a.
+                                        </div>
+                                        <div class="step-4 instructions typewriter">
+                                            4. $30 are given to the user-c by user-b.
+                                        </div>
+                                        <div class="step-5 instructions typewriter">
+                                            5.Line 5 bhi achi h ab kya kre mene liookhi hai
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ============================================== Ledger END ===================================================  -->
+                            <!-- ============================================== Distributed Ledger Start ===================================================  -->
+                            <div class="carousel-item">
+                                <div class="scene">
+                                    <div class="scene-heading">
+                                        Distributed Ledger
+                                    </div>
+                                    <div class="typewriter-container">
+                                        <b class="text-warning">* </b> A single block may contain multiple transactions, here we are taking only one trasnaction per block. 
+                                        <br />
+                                        <div class="etypewriter" id="disLedgerInfo1">
+                                            1. A new transaction is broadcasted.
+                                        </div>
+                                        <div class="etypewriter" id="disLedgerInfo2">
+                                            2. It is then sent to every node(miner) in the network.
+                                        </div>
+                                        <div class="etypewriter" id="disLedgerInfo3">
+                                            3. Every network adds it to thier ledger(chain) as a new block.
+                                        </div>
+                                    </div>
+                                    <div class="disledger-anims" id="disledger-anims">
+                                        <button id="newTrans" class="button addTrans">Add Transaction</button>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <div class="card text-center disLedger-node">
+                                                <div class="card-header">
+                                                    <b>Node A</b>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="row nodes">
+                                                        <div class="col-4">
+                                                            <div class="card disLedger">
+                                                                <div class="card-header">
+                                                                    Hash: <b class="firstHash">astawtawt</b>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <b>#1 </b> Validated transaction
+                                                                </div>
+                                                                <div class="card-footer text-muted">
+                                                                    Prev Hash: <b>NULL</b>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="card text-center disLedger-node">
+                                                <div class="card-header">
+                                                    <b>Node B</b>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="row nodes">
+
+                                                        <div class="col-4">
+                                                            <div class="card disLedger">
+                                                                <div class="card-header">
+                                                                    Hash: <b class="firstHash">astawtawt</b>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <b>#1 </b> Validated transaction
+                                                                </div>
+                                                                <div class="card-footer text-muted">
+                                                                    Prev Hash: <b>NULL</b>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="card text-center disLedger-node">
+                                                <div class="card-header">
+                                                    <b>Node C</b>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="row nodes">
+                                                        <div class="col-4">
+                                                            <div class="card disLedger">
+                                                                <div class="card-header">
+                                                                    Hash: <b class="firstHash">astawtawt</b>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <b>#1 </b> Validated transaction
+                                                                </div>
+                                                                <div class="card-footer text-muted">
+                                                                    Prev Hash: <b>NULL</b>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <!-- ============================================== Distributed Ledger END ===================================================  -->
+                            <!-- ============================================== MINING Start ===================================================  -->
+
+                            <div class="carousel-item">
+                                <div class="scene">
+                                    <div class="scene-heading">
+                                        Mining
+                                    </div>
+                                    <!-- <div id="clock"></div> -->
+                                    <div id="shiva"><span class="count2"></div>
+
+                                    <button id="Show0" class="btn-class">Start</button>
+                                    <div class="typewriter">
+                                        <h5>Start the process..</h5>
+                                        <h5 id="type1">Click on transaction to send.</h5>
+                                        <h5 id="type2">Now all miners are finding correct hash.</h5>
+                                        <h5 id="type3">Miner B got the right hash ,miner b and miner c has confirmed
+                                        </h5>
+                                    </div>
+                                    <button class="btn-class" style="display: none;" id="Show1"
+                                        onclick="myfunction()">Transaction</button>
+
+                                    <div class="mining_animation"></div>
+                                    <br><br><br>
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <div class="heading confirm">
+                                                <h3 data-toggle="tooltip" title="Mining...">Miner A</h3>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <div class="block">
+                                                        <h5>Block A</h5>
+                                                        <hr>
+                                                        <p>Hash: <b>TyKNyX</b></p>
+                                                        <hr>
+                                                        Prev Hash: <b>NULL</b>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="block">
+                                                        <h5>Block B</h5>
+                                                        <hr>
+                                                        <p>Hash: <b>qR6XeH</b></p>
+                                                        <hr>
+                                                        Prev Hash: <b>TyKNyX</b>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 opace">
+                                                    <div class="block blockc" id="display_block">
+                                                        <h5>Block C</h5>
+                                                        <hr>
+                                                        <p>Hash: <b id="acHash">astawtawt</b></p>
+                                                        <hr>
+                                                        Prev Hash: <b>qR6XeH</b>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="heading" id="done">
+                                                <h3 data-toggle="tooltip" title="Mining...">Miner B</h3>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <div class="block">
+                                                        <h5>Block A</h5>
+                                                        <hr>
+                                                        <p>Hash: <b>TyKNyX</b></p>
+                                                        <hr>
+                                                        Prev Hash: <b>NULL</b>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="block">
+                                                        <h5>Block B</h5>
+                                                        <hr>
+                                                        <p>Hash: <b>qR6XeH</b></p>
+                                                        <hr>
+                                                        Prev Hash: <b>TyKNyX</b>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 opace">
+                                                    <div class="block blockc" id="mid-blockc">
+                                                        <h5>Block C</h5>
+                                                        <hr>
+                                                        <p>Hash: <b id="bcHash">astawtawt</b></p>
+                                                        <hr>
+                                                        Prev Hash: <b>qR6XeH</b>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="heading confirm">
+                                                <h3 data-toggle="tooltip" title="Mining...">Miner C</h3>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <div class="block">
+                                                        <h5>Block A</h5>
+                                                        <hr>
+                                                        <p>Hash: <b>TyKNyX</b></p>
+                                                        <hr>
+                                                        Prev Hash: <b>NULL</b>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="block">
+                                                        <h5>Block B</h5>
+                                                        <hr>
+                                                        <p>Hash: <b>qR6XeH</b></p>
+                                                        <hr>
+                                                        Prev Hash: <b>TyKNyX</b>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 opace">
+                                                    <div class="block blockc" id="display_block">
+                                                        <h5>Block C</h5>
+                                                        <hr>
+                                                        <p>Hash: <b id="ccHash">astawtawt</b></p>
+                                                        <hr>
+                                                        Prev Hash: <b>qR6XeH</b>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ============================================== MINING END ===================================================  -->
+                        </div>
+                        <a class="control-prev button" href="#chap-carasouel" role="button" data-slide="prev">
+                            Previous
+                        </a>
+                        <a class="control-next button" href="#chap-carasouel" role="button" data-slide="next">
+                            Next
+                        </a>
+                    </div>
+                </div>
+                <!-- <div class="col-1">
+
+                </div> -->
+            </div>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="./js/jquery-3.4.1.js"></script>
+        <!-- <script src="../js/jquery-2.1.3.js"></script> -->
+        <script src="./js/ajax-lib-popper-1.12.9.js"></script>
+        <script src="./js/bootstrap-js-4.0.js"></script>
+        <script src="https://kit.fontawesome.com/20246d5e04.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@mojs/core"></script>
+        <script>
+            function randString(length) {
+                var result = '';
+                var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+                var charactersLength = characters.length;
+                for (var i = 0; i < length; i++) {
+                    result += characters.charAt(Math.floor(Math.random() * charactersLength));
+                }
+                return result;
+            }
+
+            $('#Show').click(function () {
+                $('#b1').removeClass("disabled");
+                $('#user-a').show(500);
+                $('#Hide').show(500);
+                $('.step-1').show(1000);
+
+            });
+            $('#b1').click(function () {
+                if ($(this).hasClass('disabled')) {
+                    alert('CLICKED, BUT DISABLED FIRST START!!');
+                } else {
+                    $('#b1').hide(90);
+                    $('#b2').show(90);
+                    $('.step-2').show(1000);
+                    $('#block-1').show(500);
+                }
+
+            });
+            $('#b2').click(function () {
+                $('#a-fas').show(500);
+                $('#b2').hide(90);
+
+                $('.step-3').show(1000);
+                $('#user-b').show(1000);
+                $('#arrow-a').show(500);
+                $('#triangle-right').show(500);
+                $('#b3').show(90);
+                $('#block-2').show(500);
+
+            });
+            $('#b3').click(function () {
+                $('#b3').hide(90);
+                $('.step-4').show(1000);
+                $('#b-fas').show(500);
+                $('#user-c').show(1000);
+                $('#arrow-b').show(500);
+                $('#triangle-down').show(500);
+                $('#block-3').show(500);
+                $('#b4').show(90);
+            });
+            $('#b4').click(function () {
+                $('#b4').hide(90);
+                $('#c-fas').show(500);
+                $('#user-d').show(1000);
+                $('#arrow-c').show(500);
+                $('#triangle-left').show(500);
+                $('#block-4').show(500);
+                $('#Hide').show(500);
+                $('#Show').hide(100);
+                $('.step-5').show(1000);
+                $('#pagain').show(100);
+            });
+            $('#pagain').click(function () {
+                $('#pagain').hide(300);
+                $('#Show').show(300);
+                $('#b1').addClass("disabled");
+                $('#b1').show(300);
+                $('#c-fas').hide(500);
+                $('#user-d').hide(1000);
+                $('#arrow-c').hide(500);
+                $('#triangle-left').hide(500);
+                $('#block-4').hide(500);
+                $('#Hide').hide(500);
+                $('#b3').hide(300);
+                $('#b-fas').hide(500);
+                $('#user-c').hide(1000);
+                $('#arrow-b').hide(500);
+                $('#triangle-down').hide(500);
+                $('#block-3').hide(500);
+                $('#b4').hide(500);
+                $('#a-fas').hide(500);
+                $('#b2').hide(300);
+                $('#user-a').hide(500);
+                $('#user-b').hide(1000);
+                $('#arrow-a').hide(500);
+                $('#triangle-right').hide(500);
+                $('#b3').hide(500);
+                $('#block-2').hide(500);
+                $('#b2').hide(500);
+                $('#block-1').hide(500);
+            });
+
+
+            const y = -35;
+
+            class Sparks extends mojs.CustomShape {
+                getShape() { return '<path d="M11.8274713,76.9078071 C11.8274713,76.9078071 2.16693973,42.95046 30.0687526,21.2517012"></path><path d="M25.7538383,77.4836394 C25.7538383,77.4836394 20.7413252,19.6928312 92.8457655,18.1298659"></path><path d="M29.8949928,85.1781099 C29.8949928,85.1781099 41.4904038,48.3985179 81.1308462,59.416066"></path>'; }
+            }
+            mojs.addShape('sparks', Sparks);
+
+
+            const newTransaction = new mojs.Transit({
+                shape: 'rect',
+                stroke: "#7ed090",
+                strokeWidth: 40,
+                angle: { '-240': 0 },
+                className: 'newTrans',
+                radius: 20,
+                parent: '#disledger-anims',
+                scale: { 0: 2 },
+                duration: 872,
+                fill: 'none',
+                easing: 'expo.out',
+                y
+            });
+
+            const SPARKS_OPTS = {
+                shape: 'sparks',
+                parent: newTransaction.el,
+                radius: 15,
+                left: '130%',
+                top: '25%',
+                fill: 'none',
+                strokeWidth: { 10: 0 },
+                stroke: 'yellow',
+                strokeDasharray: '75',
+                strokeDashoffset: { '75': '-75' },
+                duration: 900,
+                easing: 'cubic.out',
+                strokeLinecap: 'round',
+                isForce3d: true
+            }
+
+            const sparks1 = new mojs.Shape({
+                ...SPARKS_OPTS,
+                left: '125%',
+                top: '25%',
+                angle: 80,
+            });
+
+            const sparks2 = new mojs.Shape({
+                ...SPARKS_OPTS,
+                top: '125%',
+                left: '80%',
+                angle: 165,
+            });
+
+            const sparks3 = new mojs.Shape({
+                ...SPARKS_OPTS,
+                top: '75%',
+                left: '-25%',
+                angle: 250,
+            });
+
+            const sparks4 = new mojs.Shape({
+                ...SPARKS_OPTS,
+                top: '-25%',
+                left: '20%',
+                angle: 330,
+            });
+
+            var chain = [];
+            $(document).ready(function () {
+
+                //mining code
+                $(".heading h3").tooltip({ trigger: 'manual' });
+                $('[data-toggle="tooltip"]').tooltip();
+                $('#Show1').click(function () {
+                    $(".blockc").fadeTo("slow", 0.2)
+                    $(".heading h3").tooltip('show');
+                });
+
+                //distributed ledger code:
+                let firstHash = randString(6);
+                $(".firstHash").text(firstHash);
+                chain.push(firstHash);
+
+
+                $("#newTrans").click(() => {
+                    $("#disLedgerInfo1").show();
+                    $("#disLedgerInfo2").delay(1000).show(0);
+                    $("#disLedgerInfo3").delay(2000).show(0);
+                    let width = $("#disledger-anims").width();
+                    width = width > 1400 ? 1400 : width;
+                    curve1.tune({
+                        radius: 0.171 * width,
+                        radiusY: 0.1469426751 * width
+                    });
+                    curve2.tune({
+                        radius: 0.171 * width,
+                        radiusY: 0.1469426751 * width
+                    });
+                    timeline.play()
+
+                })
+
+                let width = $("#disledger-anims").width();
+                width = width > 1400 ? 1400 : width;
+                curve1 = new mojs.Shape({
+                    shape: 'curve',
+                    points: 11,
+                    radius: 0.171 * width,
+                    radiusY: 0.1469426751 * width,
+                    left: '40%',
+                    top: '13rem',
+                    angle: -30,
+                    fill: 'none',
+                    stroke: '#7ed090',
+                    parent: '#disledger-anims',
+                    isShowStart: true,
+                    strokeDasharray: '100%',
+                    strokeDashoffset: { '-100%': '0', easing: 'cubic.in' },
+                    duration: 2000,
+                    repeat: 0
+                });
+
+                curve2 = new mojs.Shape({
+                    shape: 'curve',
+                    points: 11,
+                    radius: 0.171 * width,
+                    radiusY: 0.1469426751 * width,
+                    left: '60%',
+                    top: '13rem',
+                    angle: 30,
+                    fill: 'none',
+                    stroke: '#7ed090',
+                    parent: '#disledger-anims',
+                    isShowStart: true,
+                    strokeDasharray: '100%',
+                    strokeDashoffset: { '100%': '0', easing: 'cubic.in' },
+                    duration: 2000,
+                    repeat: 0
+                });
+
+                curve3 = new mojs.Shape({
+                    shape: 'curve',
+                    points: 1,
+                    radius: 100,
+                    radiusY: 0.1,
+                    left: '50%',
+                    top: '14rem',
+                    angle: 90,
+                    fill: 'none',
+                    stroke: '#7ed090',
+                    parent: '#disledger-anims',
+                    isShowStart: true,
+                    strokeDasharray: '100%',
+                    strokeDashoffset: { '100%': '0', easing: 'cubic.in' },
+                    duration: 2000,
+                    repeat: 0
+                });
+                let nodeCounter = 0;
+                const timeline = new mojs.Timeline({
+                    speed: 0.8,
+                    backwardEasing: 'cubic.out',
+                    onRepeatComplete: () => {
+                        if (nodeCounter++ % 2 == 1) return;
+                        setTimeout(() => {
+                            firstHash = randString(6);
+                            str = ' <div class="col-4"> \
+                        <div class="card disLedger hidden" > \
+                            <div class="card-header"> \
+                                Hash: <b>'+ firstHash + '</b> \
+                            </div> \
+                            <div class="card-body"> \
+                                <b>#'+ (chain.length + 1) + ' </b> Validated transaction \
+                                                                </div> \
+                            <div class="card-footer text-muted"> \
+                                Prev Hash: <b>'+ chain[chain.length - 1] + '</b> \
+                            </div> \
+                        </div> \
+                    </div>';
+                            chain.push(firstHash);                            
+                            $(".nodes").append(str);
+                            setTimeout(() => {
+                                $(".disLedger.hidden").fadeIn()
+                            }, 200)
+                            setTimeout(() => {
+                                timeline.setSpeed(1.0)
+                                timeline.playBackward()
+                            }, 800)                           
+                        }, 300);
+                    }
+                });
+                timeline
+                    .add(
+                        newTransaction,
+                        sparks1,
+                        sparks2,
+                        sparks3,
+                        sparks4,
+                        curve1,
+                        curve2,
+                        curve3
+                    );
+
+            });
+        </script>
+        <script>
+            //MINER CODE:
+            $('#Show0').click(function () {
+                $('#Show1').show(400);
+                $('#type1').show(400);
+            });
+            $('#Show1').click(function () {
+                $('#type2').show(400);
+                $('#type3').show(400);
+            });
+            // buttton start to display Transaction and autotyper==============================================================================================================================================
+
+            var myfunction = () => $('.count2').each(function () {
+                $(this).prop('Counter', 0).animate({
+                    Counter: 360
+                }, {
+                    duration: 9000,
+                    easing: 'swing',
+                    step: function (now) {
+                        val = Math.ceil(now);
+                        let sec = val % 60;
+                        let min = Math.floor(val / 60);
+                        $(this).text(min + ":" + ("" + sec).padStart(2, "0"));
+                        $("#acHash").text(randString(6));
+                        $("#bcHash").text(randString(6));
+                        $("#ccHash").text(randString(6));
+                    }
+                });
+                setTimeout(function () {
+                    $("#done").tooltip('hide');
+                    $("#done").tooltip({ title: '<b style="color:#A9DFBF ">Done!</b>', html: true, trigger: 'manual' });
+                    $("#done").tooltip('show');
+                    $("#mid-blockc").fadeTo("slow", 1);
+                    $("#bcHash").html("<font class='text-danger'>00k8bG</font>");
+                }, 9100);
+                setTimeout(function () {
+                    $(".confirm").tooltip('hide');
+                    $(".confirm").tooltip({ title: '<b style="color:yellow ">Confirm</b>', html: true, trigger: 'manual' });
+                    $(".confirm").tooltip('show');
+                    $(".blockc").fadeTo("slow", 1);
+                    $("#acHash, #ccHash, #bcHash").html("<font class='text-danger'>00k8bG</font>");
+                    setTimeout(() => {
+                        $(".confirm").tooltip('hide');
+                        $("#done").tooltip('hide');
+                        $(".heading h3").tooltip('hide');
+                    }, 2000);
+                }, 12000);
+            });
+        </script>
+
+</body>
+
+</html>
