@@ -19,7 +19,7 @@ Department | Computer Science(Assistant Professor)
 
 SrNo | Name | Faculty or Student | Department| Institute | Email id
 :--|:--|:--|:--|:--|:--|
-1 | Aparna Dixit | Faculty | Computer Science(Assistant Professor) | Pranveer Singh Institute Of Technology, Kanpur, Uttar Pradesh | rajatverma310795@gmail.com
+1 | Rajat Verma | Faculty | Computer Science(Assistant Professor) | Pranveer Singh Institute Of Technology, Kanpur, Uttar Pradesh | rajatverma310795@gmail.com
 2 | Simran Singh | Student | Dept. of Computer Science Engineering | Pranveer Singh Institute Of Technology, Kanpur, Uttar Pradesh | simran.singh2198@gmail.com
 3 | Shreyas Mishra | Student | Dept. of Computer Science Engineering | Pranveer Singh Institute Of Technology, Kanpur, Uttar Pradesh | shreyas77mishra@gmail.com
 4 | Vaibhav Mantri | Student | Dept. of Computer Science Engineering | Pranveer Singh Institute Of Technology, Kanpur, Uttar Pradesh | vaibhavmantri824228@gmail.com
