@@ -7,7 +7,7 @@
 <b>Discipline | </b> Computer Science
 :--|:--|
 <b> Lab</b> | Blockchain Lab
-<b> Experiment</b>|1. Block Chain
+<b> Experiment</b>|1. Introduction to Blockchain
 
 
 <h4> [1. Focus Area](#LO)
