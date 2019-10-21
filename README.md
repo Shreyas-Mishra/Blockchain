@@ -2,7 +2,7 @@
 
 <b>Discipline | <b>Computer Science
 :--|:--|
-<b>Lab</b> | <b>Block Chain</b>
+<b>Lab</b> | <b>Blockchain</b>
 <b>Experiment</b>| <b>1. Introduction to Block Chain</b>
 
 <h5> About the Experiment : </h5>
