@@ -7,6 +7,7 @@
 
 <h5> About the Experiment : </h5>
 In this experiment the user understands the cencept of Block Chain. The user also undertands how mining is done. First we have theory portion which helps the user understand about the Block Chain and then a graphical representation through simulator which will help user enhance their concepts.
+<br>
 
 <b>Name of Developer | <b> Rajat Verma
 :--|:--|
