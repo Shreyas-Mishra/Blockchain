@@ -3,7 +3,7 @@
 <b>Discipline | <b>Computer Science
 :--|:--|
 <b>Lab</b> | <b>Blockchain</b>
-<b>Experiment</b>| <b>1. Introduction to Block Chain</b>
+<b>Experiment</b>| <b>1. Introduction to Blockchain</b>
 
 <h5> About the Experiment : </h5>
 In this experiment the user understands the cencept of Block Chain. The user also undertands how mining is done. First we have theory portion which helps the user understand about the Block Chain and then a graphical representation through simulator which will help user enhance their concepts.
