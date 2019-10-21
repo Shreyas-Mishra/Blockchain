@@ -1,29 +1,42 @@
 ### Pre Test
-1. According to the blockchain mechanism, which statement is true:
+1. Which of these statements are true for open ledger:-
                         <br>
-                        A.<input type="radio" name="but" id="rb11" onclick="click1();">&nbsp;All the people recieve transactions simuntaneously.
+                        A.<input type="radio" name="but" id="rb11" onclick="click1();">&nbsp;Every one has copy of ledger
                         <br>
-                        B.<input type="radio" name="but" id="rb12" onclick="click1();">&nbsp;Only the person recives the transaction.
+                        B.<input type="radio" name="but" id="rb12" onclick="click1();">&nbsp;Ledger can be viewed by anyone
                         <br>
-                        C.<input type="radio" name="but" id="rb13" onclick="click1();">&nbsp;Both are correct
+                        C.<input type="radio" name="but" id="rb13" onclick="click1();">&nbsp;Ledger is mutable.
                         <br>
                         D.<input type="radio" name="but" id="rb14" onclick="click1();">&nbsp;None of these
                         <br>
                         <p id = "p1"></p>
                         <br>
- 2. Hasing is done by how many people?
+ 2. Which of the following is true for distributed ledger.
                         <br>
-                        A. <input type="radio" name="but2" id="rb21" onclick="click2();">&nbsp;Only the reciever.
+                        A. <input type="radio" name="but2" id="rb21" onclick="click2();">&nbsp;Everyone has a copy of ledger .
                         <br>
-                        B. <input type="radio" name="but2" id="rb22" onclick="click2();">&nbsp;All the people in the server.
-                        <br>
-                        C. <input type="radio" name="but2" id="rb23" onclick="click2();">&nbsp;A person who is not on the server.
+                        B. <input type="radio" name="but2" id="rb22" onclick="click2();">&nbsp;There is one copy of the ledger. 
+                        <br>.
+                        C. <input type="radio" name="but2" id="rb23" onclick="click2();">&nbsp;Ledger is mutable.
                         <br>
                         D. <input type="radio" name="but2" id="rb24" onclick="click2();">&nbsp;None of these
                         <br><br>
                         <p id = "p2"></p>
                         <br>
- 3. What is not a ledger type considered by users in blockchain?
+ 
+ 3. A miner has completed the minning what will be the next step:-?
+                        <br>
+                        A. <input type="radio" name="but4" id="rb41" onclick="click4();">&nbsp;Wait for second miner to complete
+                        <br>
+                        B. <input type="radio" name="but4" id="rb42" onclick="click4();">&nbsp;Wait for all members to complete
+                        <br>
+                        C. <input type="radio" name="but4" id="rb43" onclick="click4();">&nbsp;Validate the transaction and add it to the ledger
+                        <br>
+                        D. <input type="radio" name="but4" id="rb44" onclick="click4();">&nbsp;None of these
+                        <br><br>
+                        <p id = "p4"></p>
+                        <br>
+4. What is not a ledger type in blockchain?
                        <br>
                         A. <input type="radio" name="but3" id="rb31" onclick="click3();">&nbsp;Distributed Ledger
                         <br>
@@ -35,27 +48,4 @@
                         <br><br>
                         <p id = "p3"></p>
                         <br>
- 4. What does a ledger in blockchain does?
-                        <br>
-                        A. <input type="radio" name="but4" id="rb41" onclick="click4();">&nbsp;Mapping between owner and object
-                        <br>
-                        B. <input type="radio" name="but4" id="rb42" onclick="click4();">&nbsp;Identification of objects owned
-                        <br>
-                        C. <input type="radio" name="but4" id="rb43" onclick="click4();">&nbsp;Identification of owners
-                        <br>
-                        D. <input type="radio" name="but4" id="rb44" onclick="click4();">&nbsp;None of these
-                        <br><br>
-                        <p id = "p4"></p>
-                        <br>
- 5. Which of the following is important for blockchain?
-                         <br>
-                        A. <input type="radio" name="but5" id="rb51" onclick="click5();">&nbsp;Database Security
-                        <br>
-                        B. <input type="radio" name="but5" id="rb52" onclick="click5();">&nbsp;Auditing
-                        <br>
-                        C. <input type="radio" name="but5" id="rb53" onclick="click5();">&nbsp;Planning
-                        <br>
-                        D. <input type="radio" name="but5" id="rb54" onclick="click5();">&nbsp;None of these
-                        <br><br>
-                        <p id = "p5"></p>
-                        <br>                     
+                     
