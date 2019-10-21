@@ -1,4 +1,4 @@
-### Pre Test
+### Post Test
 1. Which of these statements are true for open ledger:-
                         <br>
                         A.<input type="radio" name="but" id="rb11" onclick="click1();">&nbsp;Every one has copy of ledger
