@@ -4,6 +4,7 @@
                     <br>
                    <br>
                     <h3>Elements of blockchain: </h3>
+                    <h4>Open Ledger</h4>It is "an open, distributed ledger that can record transactions between two parties efficiently and in a verifiable and permanent way". For use as a distributed ledger, a blockchain is typically managed by a peer-to-peer network collectively adhering to a protocol for inter-node communication and validating new blocks.
                     <h4>Smart Contract</h4>  While a standard contract outlines the terms of a relationship (usually one enforceable by law), a smart contract enforces a relationship with cryptographic code. Smart contracts are self-executing contracts with the terms of the agreement between buyer and seller being directly written into lines of code. The code and the agreements contained therein exist across a distributed, decentralized blockchain network. Smart contracts permit trusted transactions and agreements to be carried out among disparate, anonymous parties without the need for a central authority, legal system, or external enforcement mechanism. They render transactions traceable, transparent, and irreversible.
                      <h4>Consensus Model</h4> The consensus provides the technical infrastructure layer for blockchains. This makes it one of the most critical components when assessing real-world use cases
                      Consensus is key, because without a central authority, the participants must agree on the rules and how to apply them.
