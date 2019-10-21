@@ -98,17 +98,33 @@
                         <p id = "p5"></p>
                         <br>                     
 ### Post Test
-<p style="font-size:100%; margin-top:2%">
-                        1. Why blockchain is trustworthy?
-                        <br>
-                        2. What is the principle of  blockchain?
-                        <br>
-                        3. What is difference between public key and private key?
-                        <br>
-                        4. What are the benefits of blockchain?
-                        <br>
-                        5. What are the drawbacks of blockchain?
-                    
+
+<dd><b>1. Which of these statements are true for open ledger:-<br>
+a)	Every one has copy of ledger.<br>
+b)	Ledger can be viewed by anyone.<br>
+c)	Ledger is mutable.<br>
+d)	None Of these<br></dd><br></b>
+
+<dd><b>2.Which of the following  is true for distributed ledger.<br>
+a)	Everyone has a copy of ledger
+<br>
+b)	THere is one copy of the ledger
+<br>
+c)	Ledger is mutable.
+<br>
+d)	None of these
+<br><br></b>
+</dd>
+
+<dd>
+<b>3. A miner has completed the minning what will be the next step:-<br>
+a)	Wait for second miner to complete<br>
+b)	Wait for all members to complete<br>
+c)	Validate the transaction and add it to the ledger<br>
+d)	None of the above <br></b>
+</dd>
+
+
 
 ### References
 <p style="font-size:100%; margin-top:2%">
