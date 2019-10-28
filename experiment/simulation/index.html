@@ -12,8 +12,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/bootstrap-4.0.css">
     <link rel="stylesheet" href="./css/style.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
     <title>BlockChains</title>
 </head>
 
@@ -234,7 +236,45 @@
                             </div>
                             <!-- ============================================== Distributed Ledger END ===================================================  -->
                             <!-- ============================================== MINING Start ===================================================  -->
-
+                            
+                            
+                            <!-- 1st modal1 starts here-->
+      <div class="modal fade" id="exampleModalCenter1" tabindex="10" role="dialog" 
+      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document" style="z-index: 50;">
+          <div class="modal-content">
+              <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">Start</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Process starts...
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of 1st modal -->
+      <!-- 2nd modal -->
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalCenter" tabindex="10" role="dialog" 
+      aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="z-index: 10000;">
+        <div class="modal-dialog modal-dialog-centered" role="document" style="z-index: 55550;">
+          <div class="modal-content">
+              <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">Transaction</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Now transaction will come to all the miners and the first miner which finds the correct hash will display done first and others confirms the hash.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of second modal -->
                             <div class="carousel-item">
                                 <div class="scene">
                                     <div class="scene-heading">
@@ -242,8 +282,7 @@
                                     </div>
                                     <!-- <div id="clock"></div> -->
                                     <div id="shiva"><span class="count2"></div>
-
-                                    <button id="Show0" class="btn-class">Start</button>
+                                    <button id="Show0" class="btn-class" type="button" data-toggle="modal" data-target="#exampleModalCenter1">Start</button>
                                     <div class="typewriter">
                                         <h5>Start the process..</h5>
                                         <h5 id="type1">Click on transaction to send.</h5>
@@ -252,14 +291,13 @@
                                         </h5>
                                     </div>
                                     <button class="btn-class" style="display: none;" id="Show1"
-                                        onclick="myfunction()">Transaction</button>
-
+                                        onclick="myfunction()" type="button" data-toggle="modal" data-target="#exampleModalCenter">Transaction</button>
                                     <div class="mining_animation"></div>
                                     <br><br><br>
                                     <div class="row">
                                         <div class="col-4">
                                             <div class="heading confirm">
-                                                <h3 data-toggle="tooltip" title="Mining...">Miner A</h3>
+                                                <h3 data-toggle="tooltip" title="Mining..." style="z-index: 0;">Miner A</h3>
                                             </div>
                                             <div class="row">
                                                 <div class="col-4">
@@ -693,7 +731,7 @@
             });
             $('#Show1').click(function () {
                 $('#type2').show(400);
-                $('#type3').show(400);
+                $('#type3').show(10000);
             });
             // buttton start to display Transaction and autotyper==============================================================================================================================================
 
@@ -733,6 +771,10 @@
                     }, 2000);
                 }, 12000);
             });
+
+            $('.popover-dismiss').popover({
+  trigger: 'focus'
+})
         </script>
 
 </body>
