@@ -81,14 +81,19 @@
                                     Open Ledger
                                 </div>
                                 <div class="o-led">
-                                    <button class="btn o-btn btnFloat" id="Show">Start</button>
+                                    <button class="btn o-btn btnFloat" id="Show" data-toggle="modal"
+                                        data-target="#modal-oled-1">Start</button>
                                     <button class="btn o-btn" style="display: none;" id="pagain">Restart</button>
-                                    <button class="btn o-btn disabled" id="b1">Create Genesis Block</button>
-                                    <button class="btn o-btn" style="display: none;" id="b2">Create
+                                    <button class="btn o-btn disabled" id="b1" data-toggle="modal"
+                                        data-target="#modal-oled-2">Create Genesis Block</button>
+                                    <button class="btn o-btn" style="display: none;" id="b2" data-toggle="modal"
+                                        data-target="#modal-oled-3">Create
                                         Block-2/Link-1</button>
-                                    <button class="btn o-btn" style="display: none;" id="b3">Create
+                                    <button class="btn o-btn" style="display: none;" id="b3" data-toggle="modal"
+                                        data-target="#modal-oled-4">Create
                                         Block-3/Link-2</button>
-                                    <button class="btn o-btn" style="display: none;" id="b4">Create
+                                    <button class="btn o-btn" style="display: none;" id="b4" data-toggle="modal"
+                                        data-target="#modal-oled-5">Create
                                         Block-4/Link-3</button>
                                     <div class="ledger">
                                         <div id="user-a" class="text-center">A</div>
@@ -129,6 +134,128 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- ============================================== Ledger Modals ===================================================  -->
+
+
+                            <div class="modal fade" id="modal-oled-1" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Alert</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Clicking start has started your first experiment by creating user-a.<br>
+                                            Now click on "Create Genesis Block".
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal fade" id="modal-oled-2" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Alert</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Clicking Create Genesis Block has created a transaction that<br>
+                                            gives $100 to User-a, hence creating the first block.<br>
+                                            The first block created in a block chain is called the genesis block.<br>
+                                            Now click on "Create Block-2 ".
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal fade" id="modal-oled-3" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Alert</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Clicking Create Block-2 has created a second user 'User-B'.<br>
+                                            And it also created second transaction where User-A<br>
+                                            is sending $50 to User-B which creates transaction 2 .<br>
+                                            Now click "Create Block-3".
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal fade" id="modal-oled-4" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Alert</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Clicking Create Block-3 has created a third user 'User-C'.<br>
+                                            And it also created third transaction where User-B<br>
+                                            is sending $30 to User-B which creates transaction 3. <br>
+                                            Now click "Create Block-4".
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal fade" id="modal-oled-5" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Alert</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Clicking Create Block-4 has created a fourth user 'User-D'.<br>
+                                            And it also created fourth transaction where User-C<br>
+                                            is sending $10 to User-C which creates transaction 3. <br>
+                                            Now click "Next" button at bottom of the page.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ============================================== Ledger Modal End ===================================================  -->
                             <!-- ============================================== Ledger END ===================================================  -->
                             <!-- ============================================== Distributed Ledger Start ===================================================  -->
                             <div class="carousel-item">
