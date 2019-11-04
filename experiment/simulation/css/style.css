@@ -508,22 +508,7 @@ body {
     height: 18rem;
     width: 100%;
     position: relative;
-}
-
-.newTrans {
-    position: relative;
-    z-index: 1;
-}
-
-.newTrans:after {
-    content: "New Valid Transaction";
-    position: absolute;
-    font-size: 0.5rem;
-    color: #fff;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    overflow:hidden;
 }
 
 .addTrans {
