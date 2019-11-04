@@ -4,15 +4,14 @@ Experiment 1: Introduction to Block Chain
 
 ### 1. Story Outline:
 
-<div align="justify"> The experiment demonstrates three main features of block chain namely "OPEN LEADGER" , "DISTRIBUTED LEDGER" & "MINING. It's divided into three parts according to the three features told previously. In first part we are showing how a block chain is created by showing transactions between four nodes or users. And creates a block for each transaction joint by a chain creating a block chain.The second part of the experiment contains the concept of distributed ledger in which we are shown how a valid transaction is distributed among all the other users or nodes which creates a copy of the ledger with every node. And the 3rd part consist of mining where a transaction is made which  is said to be invalid transaction.Then to make the transaction valid all the miners start mining and when a miner has completed the mining the transaction is said to be validated and is added to distributed ledger.
+<div align="justify"> The students lands into the simulator and it demonstrates the following scenario. Initially there is a concept of open ledger followed by distributed ledger and at the end there is a mining concept.
 
 ### 2. Story:
+<div align="justify">The experiment demonstrates three main concepts of Blockchain namely open ledger ditributed ledger and mining the creation of Blockchain is depicted by showing transactions in the open ledges component of distributed ledger is depicted in. Second phase where it is shown how a valid transaction is ditributed among all users and the last phases of the mining that validate all transactions with the help of hashing concept.
 
 #### 2.1 Set the Visual Stage Description:
-<h2>Construction of the set-up</h2>
-
-For better visualization, a simulator is provided. Block Chain is always taught in a theoretical manner but there is always a need of some physical significance. Since performing this experiment in real life is not feasible because of privacy issues, a simulation can always act as the best possible alternative. A proper animated environment is given for understanding the procedure.Three user control functions are performed one by one for deeper understanding of the concept.
-
+<h2>Construction of the set-up:</h2>
+<div align = "justify">for better visualization a simulator is provided. There is a need of physical significance for teaching Blockchain. Since performing this experiment in real life is not feasible because of privacy issues, a simulator can always be the best alternative. A proper animated environemnt is given for understanding the procedure. Three user control functions are namely(Open Ledger,Distributed Ledger and Mining) perform one by one for deeper understadning of the concept. 
 #### 2.2 Set User Objectives & Goals:
 Sr. No |	Learning Objective	| Cognitive Level | Action Verb
 :--|:--|:--|:-:
