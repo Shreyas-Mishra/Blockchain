@@ -41,16 +41,19 @@ Sr. No |	Learning Objective	| Cognitive Level | Action Verb
 
 <a name="IS"></a>
 #### 3. Instructional Strategy
-###### Name of Instructional Strategy  :     <u> Expository and problem based.</u>
-###### Assessment Method: <u>Formative Assessment and Summative Assessment</u>
+###### Name of Instructional Strategy  :     <u> Expository and Guided enquiry.</u>
+###### Assessment Method: <u>Formative Assessment.</u>
 
-<u> <b>Description: </b> In this experiment you will learn about Block Chain and its relevance in real world: </u>
+<u> <b>Description: </b> In this experiment you will learn about Block Chain: </u>
 <br>
- <div align="justify">•	The main objective to develop this lab is to provide an interactive source of learning for the students. The simulation that we provide fulfills our purpose.
+ <div align="justify">•	The main objective to consider this expository approach is that it is an interactive source of learning for the people/user.
 <br>
-•	The learner will be easily able to understand Cryptograph Sciences.<br>
 •	The user will able to understand a relation between user and blocks.<br>
-•	With the help of our virtual lab, students get a chance to learn Block Chain as they are provided with an interactive simulator. It is beneficial in understanding the basics of Cryptograph Sciences which simply cannot be understood by self-evaluation.
+•	User can understand the basics of cryptographic sciences which cannot be understood by self-evaluation.<br>
+•   Students will be able to learn about Blockchain concepts.<br>
+•   Students will be able to learn about open ledger.<br>
+•   Students will be able to learn about distributed ledger.<br>
+•   Students will be able to learn about mining process.<br>
 <br/>
 <div align="right">
     <b><a href="#top">↥ back to top</a></b>
@@ -66,10 +69,10 @@ Read the theory and comprehend the concepts related to the experiment.
 
 Sr. No |	Learning Objective	| Task to be performed by <br> the student  in the simulator | Assessment Questions as per LO & Task
 :--|:--|:--|:-:
-1.| Recall | To state what is Block Chain. | <div align="justify"> Which of these statements are true for Block Chain mechanism?<br> i. For Block Chain only.<br> ii. For Hashing only.<br> iii. For both<br> iv. None of these
-2.| Understand | To understand the theory of Block Chain and make student friendly with special theory of Hashing. | <div align="justify">Which of the following  is true for Block Chain?<br> i. Open Ledger<br>ii. Distributive Ledger <br> iii. Mining<br> iv. All of the above
-3.| Apply | Apply Hashing to Decrypt Mines |<div align="justify"> How a block is recieved and how it is accessed?
-
+1.| Users will be able to recall the concepts of Blockchain. | Describe number of block created in open ledger. | <div align="justify"> Which of these statements are true for Block Chain mechanism?<br> i. For Block Chain only.<br> ii. For Hashing only.<br> iii. For both<br> iv. None of these
+2.| Users will be able to understand Blockchain i.e how block is recieved and transferred. | i.Describe genesis block. | <div align="justify">How genesis block can be created?<br> ii.How can transactions be added?
+3.| Users will be able to apply the basics of Blockchain. | describe the process of hashing distributed ledger and mining. |<div align="justify"><br> i. Which block will be null in all transactions?.<br> ii. Which block will be mined first?<br> iii. For both<br> iv. None of these
+4.| Users will be able to mine and how data is transferred in Blockchain. | Analyze the process of decryption in mining.. |<div align="justify"><br> i. Which block will have previous hash as null?.<br> ii. Examine which blocks are validated?
 
  <br>
 
