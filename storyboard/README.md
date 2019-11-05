@@ -12,6 +12,7 @@ Experiment 1: Introduction to Block Chain
 #### 2.1 Set the Visual Stage Description:
 <h2>Construction of the set-up:</h2>
 <div align = "justify">For better visualization a simulator is provided. There is a need of physical significance for teaching Blockchain. Since performing this experiment in real life is not feasible because of privacy issues, a simulator can always be the best alternative. A proper animated environemnt is given for understanding the procedure. Three user control functions are namely(Open Ledger,Distributed Ledger and Mining) perform one by one for deeper understadning of the concept. 
+ 
 #### 2.2 Set User Objectives & Goals:
 Sr. No |	Learning Objective	| Cognitive Level | Action Verb
 :--|:--|:--|:-:
