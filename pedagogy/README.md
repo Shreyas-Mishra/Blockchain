@@ -13,9 +13,9 @@
 <h4> [1.1 Focus Area](#LO)
 <h4> [1.2 About the Experiment](#LO)
 <h4> [1.3 Learning Objectives ](#LO)
-<h4> [1.4 Instructional Strategy](#IS)
-<h4> [1.5 Task & Assessment Questions](#AQ)
-<h4> [1.6 Simulator Interactions](#SI)
+<h4> [2 Instructional Strategy](#IS)
+<h4> [3 Task & Assessment Questions](#AQ)
+<h4> [4 Simulator Interactions](#SI)
 <hr>
 
 <a name="LO"></a>
