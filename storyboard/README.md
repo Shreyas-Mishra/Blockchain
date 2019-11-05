@@ -11,14 +11,14 @@ Experiment 1: Introduction to Block Chain
 
 #### 2.1 Set the Visual Stage Description:
 <h2>Construction of the set-up:</h2>
-<div align = "justify">for better visualization a simulator is provided. There is a need of physical significance for teaching Blockchain. Since performing this experiment in real life is not feasible because of privacy issues, a simulator can always be the best alternative. A proper animated environemnt is given for understanding the procedure. Three user control functions are namely(Open Ledger,Distributed Ledger and Mining) perform one by one for deeper understadning of the concept. 
+<div align = "justify">For better visualization a simulator is provided. There is a need of physical significance for teaching Blockchain. Since performing this experiment in real life is not feasible because of privacy issues, a simulator can always be the best alternative. A proper animated environemnt is given for understanding the procedure. Three user control functions are namely(Open Ledger,Distributed Ledger and Mining) perform one by one for deeper understadning of the concept. 
 #### 2.2 Set User Objectives & Goals:
 Sr. No |	Learning Objective	| Cognitive Level | Action Verb
 :--|:--|:--|:-:
-1.| User will be able to: <br>Understand the concept of blockchain  <br> and how it is applied. | Understand | Identify
+1.| User will be able to: <br>Understand the concept of blockchain  <br> and how it is applied. | Understand | Describe
 2.| User will be able to: <br>Understand what is a open ledger<br>and it's creation | Understand| Describe
-3.| User will be able to: <br>apply the concpet of open ledger<br>to create  an open ledger | Apply | Implement
-4.| User will be able to: <br>To analyze how mining works in validating <br> an unvalidated transaction by  hashing | Analyze| Examine
+3.| User will be able to: <br>Apply the concept of open ledger<br>to create  an open ledger | Apply | Experiment with Apply
+4.| User will be able to: <br>To analyze how mining works in validating <br> an unchecked transaction by  hashing | Analyze| Examine
 
 Enhance conceptual and logical skill
 </b>
@@ -26,10 +26,10 @@ Enhance conceptual and logical skill
 #### 2.3 Set the Pathway Activities:
 
 The simulator tab would allow:<br> <br>
-<dd>1.	To make transaction from users which will create blocks.<br>
-2.	The blocks will further get inked showing the 'chain' of block chain.<br>
+<dd>1.	To make transaction from users that will create unvalidated blocks.<br>
+2.	The block will further get linked showing the 'chain' of blockchain.<br>
 3.	There would be a ‘Start’ button which will start the processes in first and last part.<br>
-4.	You can also read the instructions on the side for further explanation of what is happening.<br>
+4.	Student can also read the instructions on the side for further explanation of what is happening.<br>
 5.	Second part is for analyzing distributed ledger.<br>
 6.  Third part is showing us how mining works and the process of validation of transaction.
 </dd>
