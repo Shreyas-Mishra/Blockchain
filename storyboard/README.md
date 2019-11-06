@@ -7,11 +7,11 @@ Experiment 1: Three pillars to Blockchain
 <div align="justify"> The students lands into the simulator and it demonstrates the following scenario. The simulator loads with text and illustration of Blockchain and then it moves on to Open Ledger and then to Distributed Ledger.
 
 ### 2. Story:
-<div align="justify">The experitment demonstrates three pillars of Blockchain namely Decentralization,Transparency and Immutability. The creation of Blockchain is depicted by showing transactions in Open Ledger component. The concepts of Distributed Ledger is dipicted in the second phase where it illustrates how a valid transactions is ditributed among all users.
+<div align="justify">The experiment demonstrates three pillars of Blockchain namely Decentralization, Transparency and Immutability. The creation of Blockchain is depicted by showing transactions in the Open Ledger component. The concepts of Distributed Ledger are depicted in the second phase where it illustrates how a valid transaction is distributed among all users.
 
 #### 2.1 Set the Visual Stage Description:
 <h2>Construction of the set-up:</h2>
-<div align = "justify">For better visualization,a simulator is provided. There is a need of physical significance for teaching Blockchain. Since, performing this experiment in real life is not feasible because of privacy issues,a simulator can always be the best alternative. A proper animated environment is given for better understanding of procedure. Three pillars of Blockchain namely(Decentralized,Transparency and Immutability) are performed one by one for deeper understanding of the concept. 
+<div align = "justify">For better visualization, a simulator is provided. There is a need of physical significance for teaching Blockchain. Since, performing this experiment in real life is not feasible because of privacy issues, a simulator can always be the best alternative. A proper animated environment is given for better understanding of the procedure. Three pillars of Blockchain namely (Decentralized, Transparency and Immutability) are performed one by one for deeper understanding of the concept.
  
 #### 2.2 Set User Objectives & Goals:
 Sr. No |	Learning Objective	| Cognitive Level | Action Verb
