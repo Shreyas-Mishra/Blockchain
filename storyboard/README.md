@@ -1,6 +1,6 @@
 ## Round 2
 
-Experiment 1: Three pillars to Blockchain
+Experiment 1: Three pillars of Blockchain
 
 ### 1. Story Outline:
 
@@ -14,14 +14,13 @@ Experiment 1: Three pillars to Blockchain
 <div align = "justify">For better visualization, a simulator is provided. There is a need of physical significance for teaching Blockchain. Since, performing this experiment in real life is not feasible because of privacy issues, a simulator can always be the best alternative. A proper animated environment is given for better understanding of the procedure. Three pillars of Blockchain namely (Decentralized, Transparency and Immutability) are performed one by one for deeper understanding of the concept.
  
 #### 2.2 Set User Objectives & Goals:
-Sr. No |	Learning Objective	| Cognitive Level | Action Verb
+Sr. No |	Learning Objective	| Cognitive Level
 :--|:--|:--|:-:
-1.| User will be able to: <br>Understand the concept of blockchain  <br> and how it is applied. | Understand | Describe
-2.| User will be able to: <br>Understand what is a open ledger<br>and it's creation | Understand| Describe
-3.| User will be able to: <br>Apply the three pillars of blockchain  <br> and how it works. | Apply | Experiment/Apply
-4.| User will be able to: <br>Apply the concept of open ledger<br>to create  an open ledger | Apply | Experiment with Apply
+1.| User will be able to: <br>Understand the concept of blockchain  <br> and how it is applied.
+2.| User will be able to: <br>Understand what is a open ledger<br>and it's creation.
+3.| User will be able to: <br>Apply the three pillars of blockchain  <br> and how it works.
+4.| User will be able to: <br>Apply the concept of open ledger<br>to create  an open ledger.
 
-Enhance conceptual and logical skill
 </b>
 
 #### 2.3 Set the Pathway Activities:
@@ -40,7 +39,7 @@ The simulator tab would allow:<br> <br>
 Assessment Questions:<br>
 Task 1: Understanding the three pillars of Blockchain.<br>
 
-How are the three concepts(Decentralized,Transparency and Immutability) implimented in Blockchain?<br>
+How are the three concepts(Decentralized,Transparency and Immutability) implemented in Blockchain?<br>
 
 Task 2 : To understand the Open Ledger.<br>
 
@@ -48,7 +47,7 @@ How is a block recognized in Blockchain?<br>
 
 Task 3 : To understand Distributed Ledger.<br>
 
-How is a transaction distributed among all users?<br>
+How is a validated transaction distributed among all users?<br>
 
 #### 2.5 Allow Pitfalls:
 1. Ideally 
