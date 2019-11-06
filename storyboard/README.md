@@ -1,17 +1,17 @@
 ## Round 2
 
-Experiment 1: Introduction to Block Chain
+Experiment 1: Three pillars to Blockchain
 
 ### 1. Story Outline:
 
-<div align="justify"> The students lands into the simulator and it demonstrates the following scenario. Initially there is a concept of open ledger followed by distributed ledger and at the end there is a mining concept.
+<div align="justify"> The students lands into the simulator and it demonstrates the following scenario. The simulator loads with text and illustration of Blockchain and then it moves on to Open Ledger and then to Distributed Ledger.
 
 ### 2. Story:
-<div align="justify">The experiment demonstrates three main concepts of Blockchain namely open ledger ditributed ledger and mining the creation of Blockchain is depicted by showing transactions in the open ledges component of distributed ledger is depicted in. Second phase where it is shown how a valid transaction is ditributed among all users and the last phases of the mining that validate all transactions with the help of hashing concept.
+<div align="justify">The experitment demonstrates three pillars of Blockchain namely Decentralization,Transparency and Immutability. The creation of Blockchain is depicted by showing transactions in Open Ledger component. The concepts of Distributed Ledger is dipicted in the second phase where it illustrates how a valid transactions is ditributed among all users.
 
 #### 2.1 Set the Visual Stage Description:
 <h2>Construction of the set-up:</h2>
-<div align = "justify">For better visualization a simulator is provided. There is a need of physical significance for teaching Blockchain. Since performing this experiment in real life is not feasible because of privacy issues, a simulator can always be the best alternative. A proper animated environemnt is given for understanding the procedure. Three user control functions are namely(Open Ledger,Distributed Ledger and Mining) perform one by one for deeper understadning of the concept. 
+<div align = "justify">For better visualization,a simulator is provided. There is a need of physical significance for teaching Blockchain. Since, performing this experiment in real life is not feasible because of privacy issues,a simulator can always be the best alternative. A proper animated environment is given for better understanding of procedure. Three pillars of Blockchain namely(Decentralized,Transparency and Immutability) are performed one by one for deeper understanding of the concept. 
  
 #### 2.2 Set User Objectives & Goals:
 Sr. No |	Learning Objective	| Cognitive Level | Action Verb
