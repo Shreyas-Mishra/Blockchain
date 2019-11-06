@@ -18,8 +18,8 @@ Sr. No |	Learning Objective	| Cognitive Level | Action Verb
 :--|:--|:--|:-:
 1.| User will be able to: <br>Understand the concept of blockchain  <br> and how it is applied. | Understand | Describe
 2.| User will be able to: <br>Understand what is a open ledger<br>and it's creation | Understand| Describe
-3.| User will be able to: <br>Apply the concept of open ledger<br>to create  an open ledger | Apply | Experiment with Apply
-4.| User will be able to: <br>To analyze how mining works in validating <br> an unchecked transaction by  hashing | Analyze| Examine
+3.| User will be able to: <br>Apply the three pillars of blockchain  <br> and how it works. | Apply | Experiment/Apply
+4.| User will be able to: <br>Apply the concept of open ledger<br>to create  an open ledger | Apply | Experiment with Apply
 
 Enhance conceptual and logical skill
 </b>
@@ -27,56 +27,53 @@ Enhance conceptual and logical skill
 #### 2.3 Set the Pathway Activities:
 
 The simulator tab would allow:<br> <br>
-<dd>1.	To make transaction from users that will create unvalidated blocks.<br>
+<dd>1.	To develop transaction from users that will create validated blocks.<br>
 2.	The block will further get linked showing the 'chain' of blockchain.<br>
-3.	There would be a ‘Start’ button which will start the processes in first and last part.<br>
-4.	Student can also read the instructions on the side for further explanation of what is happening.<br>
-5.	Second part is for analyzing distributed ledger.<br>
-6.  Third part is showing us how mining works and the process of validation of transaction.
+3.	User can also read the instructions on the side for further explanation of what is happening.<br>
+4.	Second part is for analyzing Open Ledger.<br>
+5.  Third part is for analyzing the Distributed Ledger.
 </dd>
 
 
 ##### 2.4 Set Challenges and Questions/Complexity/Variations in Questions:
 
 Assessment Questions:<br>
-Task 1: Understanding the open Ledger<br>
+Task 1: Understanding the three pillars of Blockchain.<br>
 
-<dd><b> Which of these statements are true for open ledger:-<br>
-a)	Every one has copy of ledger.<br>
-b)	Ledger can be viewed by anyone.<br>
-c)	Ledger is mutable.<br>
-d)	None Of these<br></dd><br></b>
-Task 2 : To understand how ledger is distributed among all members to prevent mutability<br><br>
-<dd><b>1.Which of the following  is true for distributed ledger.<br>
-a)	Everyone has a copy of ledger
-<br>
-b)	THere is one copy of the ledger
-<br>
-c)	Ledger is mutable.
-<br>
-d)	None of these
-<br><br></b>
+How are the three concepts(Decentralized,Transparency and Immutability) implimented in Blockchain?<br>
+
+Task 2 : To understand the Open Ledger.<br>
+
+How is a block recognized in Blockchain?<br>
+
+Task 3 : To understand Distributed Ledger.<br>
+
+How is a transaction distributed among all users?<br>
+
+#### 2.5 Allow Pitfalls:
+1. Ideally 
+
+##### 2.6 Conclusion:
+<dd>In this experiment, the user has learned about the three pillars of Blockchain namely Decentralization,Transparency and Immutability. The user is able to understand the concept of Blockchain and how it is applied. Also he/she is able to understand its creation. Apart from that, he/she is be able to apply the concept of open ledger & to create an open ledger. In addition to that, he/she is able to understand how transaction are distributed among all users throught Distributed Ledger.
 </dd>
 
-Task 3 : To analyze the mining process<br><br>
-<dd>
-<b> A miner has completed the minning what will be the next step:-<br>
-a)	Wait for second miner to complete<br>
-b)	Wait for all members to complete<br>
-c)	Validate the transaction and add it to the ledger<br>
-d)	None of the above <br></b>
+#### 2.6.1 Assesment:
+
+It takes approx 8  minutes for an untrained user to completly understand and analyse the simulator.
+And about 5 minutes for a trained user to completly understand and analyse the simulator.
 </dd>
 
+##### 2.7 Equations/formulas: 
 
+### Some of the equations used in the simulator : 
 
+#### SHA-256
 
-##### 2.5 Conclusion:
-<dd>In this experiment user has learn't about the 3 main features of block chain. 
-</dd>
+<img src = "images/sha-256.png"><br>
 
-##### 2.6 Equations/formulas: NA
+#### ECDSA (Elliptic Curve Digital Signature Algorithm)
 
-
+<img src ="images/ecdsa.png" width="50%" height="50%">
 ### 3. Flowchart
 <img src="flowchart/flowchart.png" alt="Flow Chart Image here"/>
 
