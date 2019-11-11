@@ -6,7 +6,6 @@
         #dis {
             border: 1px solid #444;
         }
-
         .butt {
             background: lightskyblue;
             color: #fff;
@@ -22,42 +21,58 @@
             margin-right: 1rem;
             text-align: center;
             cursor: pointer;
+            margin-top: 45rem;
+            margin-left: 2rem;
         }
-
         .butt:hover {
             background: #3dbeff;
             text-decoration: none;
             color: #fff;
         }
+        .instruct b{
+            font-size: 25px;
+            color:#3498DB
+        }
     </style>
-    <canvas id="dis" width="950" height="800" style="margin-left: 20rem;"></canvas>
+    <div class="container">
+            <div id="actions" class="instruct" style="float: left;">
+                    <h2 style="font-size: 3rem;"><strong>&nbsp;Instructions:</strong></h2>
+                   <!-- write the instructions here  -->
+                   <b>1. Match the following with the correct answer.<b><br><br>
+                    <b>2. Select the first block on left side(Question). </b><br><br>
+                    <b>3. Now, select the block in right in such<br>a way that it is the correct answer to<br> the question on left. </b><br><br>
+                    <b>4. Do the same procedure for the rest of the<br>questions. </b><br><br>
+                    <b>5.Now, after you've done matching click on<br>"VALIDATE" button.</b><br><br>
+                    <b>6.If all the answers are correct,then a popup will<br>appear saying "Valid!".</b><br><br>
+                    <b>7. If popup shows "Not Valid!" then reset the<br>test by cicking on "RESET" button to restart<br>the test.</b>
+                </div>
+    <canvas id="dis" width="750" height="700" style="position: absolute;"></canvas>
     <br />
-    <button onclick="validate()" class="butt" style="margin-left: 20rem;position: absolute;">Validate</button>
-    <button onclick="reset()" class="butt" style="margin-left: 30rem;position: relative;">Reset</button>
+    <button onclick="validate()" class="butt" style="position: relative;">Validate</button>
+    <button onclick="reset()" class="butt" style="position: relative;">Reset</button>
+    </div>
     <script>
         //@author: Simran Singh (simran.singh2198@gmail.com)
         const BLOCK_WIDTH = 300;
         const BLOCK_HEIGHT = 30;
+        const RIGHT_BLOCK_X =  400;
         var canvas = document.getElementById("dis");
         var ctx = canvas.getContext('2d');
-
         let left = [
-            { text: "Instruction 1 aetg ataw aweta at aw tawt", correct: 1, cur: -1, active: 0 },
-            { text: "Instruction 2", correct: 3, cur: -1, active: 0 },
-            { text: "Instruction 3", correct: 0, cur: -1, active: 0 },
-            { text: "Instruction 4", correct: 2, cur: -1, active: 0 },
-            { text: "Instruction 5", correct: 4, cur: -1, active: 0 }
+            { text: "First thing we need in mining process?", correct: 1, cur: -1, active: 0 },
+            { text: "What is a hash function?", correct: 3, cur: -1, active: 0 },
+            { text: "What is the other term of Hash?", correct: 0, cur: -1, active: 0 },
+            { text: "What miners get for validation of transactions?", correct: 2, cur: -1, active: 0 },
+            { text: "One advantage of Bitcoin mining?", correct: 4, cur: -1, active: 0 }
         ];
         let right = [
-            "Something 0",
-            "Something 1",
-            "Something 2",
-            "Something 3",
-            "Something 4"
+            "A block reward",
+            "Sender's and Reciever's address.",
+            "Help strengthen the security of the network.",
+            "Returns a length string of numbers and letters.",
+            "Miscellany"
         ];
         let ca = -1;
-
-
         function renderBlock(text, x, y, active = 0) {
             ctx.beginPath();
             if (active) ctx.strokeStyle = "#FF00FF";
@@ -75,7 +90,6 @@
             ctx.stroke();
             ctx.closePath();
         }
-
         function renderLine(x, y, x1, y1) {     
             ctx.beginPath();     
             ctx.strokeStyle = "#000000";       
@@ -84,10 +98,7 @@
             ctx.stroke();
             ctx.closePath();
         }
-
-
         // ================================== YOU JUST NEED TO LOOK AT THIS CODE =========================================
-
         function renderScene() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);  // lets clear canvas before drawing
             ctx.beginPath();
@@ -95,15 +106,13 @@
             for (let i = 0; i < left.length; i++) {
                 renderBlock(left[i].text, 50, 50 + i * 90, left[i].active);
                 if (left[i].cur != -1) {
-                    renderLine(50 + BLOCK_WIDTH, 50 + i * 90 + (BLOCK_HEIGHT / 2), 600, 50 + left[i].cur * 90 + (BLOCK_HEIGHT / 2))
+                    renderLine(50 + BLOCK_WIDTH, 50 + i * 90 + (BLOCK_HEIGHT / 2), RIGHT_BLOCK_X, 50 + left[i].cur * 90 + (BLOCK_HEIGHT / 2))
                 }
             }
             for (let i = 0; i < right.length; i++) {
-                renderBlock(right[i], 600, 50 + i * 90);
+                renderBlock(right[i], RIGHT_BLOCK_X, 50 + i * 90);
             }
         }
-
-
         function mouseevt(x, y) {
             if (x >= 50 && x <= 50 + BLOCK_WIDTH)
                 for (let i = 0; i < left.length; i++) {
@@ -114,8 +123,7 @@
                         ca = i;
                     }
                 }
-
-            if (x >= 600 && x <= 600 + BLOCK_WIDTH)
+            if (x >= RIGHT_BLOCK_X && x <= RIGHT_BLOCK_X + BLOCK_WIDTH)
                 for (let i = 0; i < right.length; i++) {
                     if (y >= 50 + i * 90 && y <= 50 + i * 90 + BLOCK_HEIGHT) {
                         if (ca != -1) {
@@ -125,10 +133,8 @@
                         }
                     }
                 }
-
             renderScene();
         }
-
         function validate() {
             let correct = 1;
             for (let i = 0; i < left.length; i++) {
@@ -142,7 +148,6 @@
             else
                 alert("Incorrect");
         }
-
         function reset() {
             ca = -1;
             for (let i = 0; i < left.length; i++) {
@@ -151,7 +156,6 @@
             }
             renderScene();
         }
-
         renderScene();
     </script>
     <script src="../js/mouseevent.ob.js"></script>
