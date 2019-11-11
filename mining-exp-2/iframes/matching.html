@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <style>
+        #dis {
+            border: 1px solid #444;
+        }
+
+        .butt {
+            background: lightskyblue;
+            color: #fff;
+            padding: 0.8rem 1.7rem;
+            overflow: hidden;
+            text-decoration: none;
+            text-transform: uppercase;
+            border-radius: 3px;
+            transition: 0.3s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            border: none;
+            font-size: 15px;
+            margin-right: 1rem;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .butt:hover {
+            background: #3dbeff;
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+    <canvas id="dis" width="950" height="800" style="margin-left: 20rem;"></canvas>
+    <br />
+    <button onclick="validate()" class="butt" style="margin-left: 20rem;position: absolute;">Validate</button>
+    <button onclick="reset()" class="butt" style="margin-left: 30rem;position: relative;">Reset</button>
+    <script>
+        //@author: Simran Singh (simran.singh2198@gmail.com)
+        const BLOCK_WIDTH = 300;
+        const BLOCK_HEIGHT = 30;
+        var canvas = document.getElementById("dis");
+        var ctx = canvas.getContext('2d');
+
+        let left = [
+            { text: "Instruction 1 aetg ataw aweta at aw tawt", correct: 1, cur: -1, active: 0 },
+            { text: "Instruction 2", correct: 3, cur: -1, active: 0 },
+            { text: "Instruction 3", correct: 0, cur: -1, active: 0 },
+            { text: "Instruction 4", correct: 2, cur: -1, active: 0 },
+            { text: "Instruction 5", correct: 4, cur: -1, active: 0 }
+        ];
+        let right = [
+            "Something 0",
+            "Something 1",
+            "Something 2",
+            "Something 3",
+            "Something 4"
+        ];
+        let ca = -1;
+
+
+        function renderBlock(text, x, y, active = 0) {
+            ctx.beginPath();
+            if (active) ctx.strokeStyle = "#FF00FF";
+            ctx.rect(x, y, BLOCK_WIDTH, BLOCK_HEIGHT);//block box
+            ctx.stroke();      
+            ctx.closePath();      
+            ctx.beginPath();
+            ctx.strokeStyle = "#000000";
+            //block name: "Block A"
+            ctx.font = "14px Georgia";
+            ctx.textAlign = "center";
+            ctx.textBaseline = "middle";
+            ctx.fillStyle = "#000000";
+            ctx.fillText(text, x + (BLOCK_WIDTH / 2), y + 10);
+            ctx.stroke();
+            ctx.closePath();
+        }
+
+        function renderLine(x, y, x1, y1) {     
+            ctx.beginPath();     
+            ctx.strokeStyle = "#000000";       
+            ctx.moveTo(x, y);
+            ctx.lineTo(x1, y1);            
+            ctx.stroke();
+            ctx.closePath();
+        }
+
+
+        // ================================== YOU JUST NEED TO LOOK AT THIS CODE =========================================
+
+        function renderScene() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);  // lets clear canvas before drawing
+            ctx.beginPath();
+            //render whole scene
+            for (let i = 0; i < left.length; i++) {
+                renderBlock(left[i].text, 50, 50 + i * 90, left[i].active);
+                if (left[i].cur != -1) {
+                    renderLine(50 + BLOCK_WIDTH, 50 + i * 90 + (BLOCK_HEIGHT / 2), 600, 50 + left[i].cur * 90 + (BLOCK_HEIGHT / 2))
+                }
+            }
+            for (let i = 0; i < right.length; i++) {
+                renderBlock(right[i], 600, 50 + i * 90);
+            }
+        }
+
+
+        function mouseevt(x, y) {
+            if (x >= 50 && x <= 50 + BLOCK_WIDTH)
+                for (let i = 0; i < left.length; i++) {
+                    if (y >= 50 + i * 90 && y <= 50 + i * 90 + BLOCK_HEIGHT) {
+                        if (ca != -1)
+                            left[ca].active = 0;
+                        left[i].active = 1;
+                        ca = i;
+                    }
+                }
+
+            if (x >= 600 && x <= 600 + BLOCK_WIDTH)
+                for (let i = 0; i < right.length; i++) {
+                    if (y >= 50 + i * 90 && y <= 50 + i * 90 + BLOCK_HEIGHT) {
+                        if (ca != -1) {
+                            left[ca].cur = i;
+                            left[ca].active = 0;
+                            ca = -1;
+                        }
+                    }
+                }
+
+            renderScene();
+        }
+
+        function validate() {
+            let correct = 1;
+            for (let i = 0; i < left.length; i++) {
+                if (left[i].cur == -1)
+                    return alert("Match everything first");
+                if (left[i].cur != left[i].correct)
+                    correct = 0;
+            }
+            if (correct)
+                alert("Everything is correct!");
+            else
+                alert("Incorrect");
+        }
+
+        function reset() {
+            ca = -1;
+            for (let i = 0; i < left.length; i++) {
+                left[i].active = 0;
+                left[i].cur = -1;
+            }
+            renderScene();
+        }
+
+        renderScene();
+    </script>
+    <script src="../js/mouseevent.ob.js"></script>
+</body>
+
+</html>
