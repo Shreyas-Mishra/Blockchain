@@ -1,0 +1,129 @@
+.leftcontainer{
+    float: left;
+    /* width: 100%; */
+}
+body{
+    background-color:  #d4e6f1  ;
+    color: #3e64ff;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+#heading{
+    margin-bottom: -2rem;
+    text-align: center;
+    font-size: 180%;
+}
+.container1{
+    position: absolute;
+    width: 19rem;
+    margin-left: 4rem;
+    background-color: lightskyblue;
+    margin-right: 600px;
+    padding-left: 20px;
+    margin-top: 5rem;
+    padding-top: 20px;
+    box-shadow: 5px 5px 5px #888888;
+}
+/* h3{
+    margin: 0.6rem;
+} */
+
+/* #mycanvas{
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 3%;
+    width: 500px;
+    height: 300px;
+    box-shadow: 5px 5px 5px #888888;
+    background-color: lightskyblue;
+} */
+#actions{
+    position: absolute;
+    margin-top: 30rem;
+    margin-left: 29rem;
+    width: 48rem;
+    height: 20rem;
+    box-shadow: 5px 5px 5px #888888;
+    background-color: lightskyblue;
+}
+#canvas-container{
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 64%;
+    /* width: 500px; */
+    /* height: 550px; */
+    box-shadow: 5px 5px 5px #888888;
+    background-color: lightskyblue;
+}
+#diag{
+    position: absolute;
+    width: 48rem;
+    height: 24rem;
+    margin-top: 2rem;
+    margin-left: -23rem;
+    box-shadow: 5px 5px 5px #888888;
+    background-color: lightskyblue;
+
+}
+.btn{
+  position: absolute;
+  /* width: 6rem; */
+  margin-top: -0.4rem;
+    background: lightskyblue;
+    display: inline-block;
+    color: #fff;
+    padding: 0.5rem 0.8rem;
+    overflow: hidden;
+    /* position: relative; */
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 3px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    border: none;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+#page-2{
+    display: none;
+}
+#page-3{
+    display: none;
+}
+
+/* =============================================================== */
+
+#dis {
+    border: 1px solid #444;
+}
+
+.butt {
+    background: lightskyblue;
+    color: #fff;
+    padding: 0.8rem 1.7rem;
+    overflow: hidden;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 3px;
+    transition: 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    border: none;
+    font-size: 15px;
+    margin-right: 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.butt:hover {
+    background: #3dbeff;
+    text-decoration: none;
+    color: #fff;
+}
+/* ====================================================================== */
